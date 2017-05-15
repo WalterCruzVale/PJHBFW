@@ -1,0 +1,27 @@
+USE [HubFintech6]
+GO
+
+/****** Object:  Table [dbo].[Pessoa]    Script Date: 15/05/2017 00:25:03 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Pessoa](
+	[IDPessoa] [int] IDENTITY(1,1) NOT NULL,
+	[CNPJ] [varchar](14) NULL,
+	[CPF] [varchar](11) NULL,
+	[RazaoSocial] [varchar](150) NULL,
+	[NomeFantasia] [varchar](150) NULL,
+	[NomeCompleto] [varchar](150) NULL,
+	[DataNascimento] [date] NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[IDPessoa] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+
